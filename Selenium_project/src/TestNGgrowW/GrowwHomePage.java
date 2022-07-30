@@ -13,6 +13,7 @@ public class GrowwHomePage {
 	
 	@FindBy(xpath = "(//div[@class='settingItem valign-wrapper'])[5]") private WebElement logOut;
 	
+	@FindBy(xpath = "//p[@class='truncate headerDggnd']") private WebElement Userid;
 	
 	public  GrowwHomePage(WebDriver driver) {
 	
@@ -24,6 +25,14 @@ public class GrowwHomePage {
 		
 		ClickOnUser.click();
 	}
+	
+	public String GetActualUserID() {
+		
+		String ActualUserID = Userid.getText();
+	  return ActualUserID;
+		
+	}
+	
 	
 	public void logOutClick() {
 		
