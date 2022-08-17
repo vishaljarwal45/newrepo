@@ -11,6 +11,7 @@ public class NEw {
 	
 	int sum=a+b;
 	System.out.println(sum);
+	//vishal has updated through git bashh
 		
 	}
 
