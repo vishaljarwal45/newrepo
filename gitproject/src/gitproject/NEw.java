@@ -13,5 +13,5 @@ public class NEw {
 	System.out.println(sum);
 		
 	}
-
+// added just now 7.52
 }
