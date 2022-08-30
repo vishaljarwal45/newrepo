@@ -10,7 +10,7 @@ public class hashmappro {
       
       m.put(101,"vishal");
       m.put(102, "jarwal");
-      m.put(103, "suraj");
+      m.put(103, "suraj");         // keys are unique values can be duplicate
       m.put(104, "kakarwal");
       m.put(105, "ishwar");
       m.put(106, "ghunawat");
