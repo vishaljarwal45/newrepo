@@ -28,10 +28,15 @@ public class unorderdlinks_study {
 		      
 		  System.out.println(links.size());
 		  
-		  for(WebElement a:links) {
-			  System.out.println(a.getText());
+		  for(WebElement l:links) {
+			  System.out.println(l.getText());
+			  
 		  }
 		  
+//		  for(WebElement a:links) {
+//			  System.out.println(a.getText());
+//		  }
+//		  
           
 
 		for(WebElement a:links) {

@@ -1,4 +1,4 @@
-package actions_classSTudy;
+ package actions_classSTudy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,9 +35,7 @@ public class Actions_classStudy {
 	//	act.moveToElement(radio1).click().build().perform();
 		
 		act.click(radio1).perform();
-		
-		
-		
+	
 		
 		
 		

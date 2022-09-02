@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGkite.kiteTestclassTestNG">
+      <class name="AA_KiteTestClass.NewTestKite">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="validateUserId"/>
-          <include name="KiteLogin"/>
+          <include name="closeApplication"/>
           <include name="closebrowser"/>
-          <include name="logoutkite"/>
+          <include name="LoginApplication"/>
+          <include name="validateUserID"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testNGkite.kiteTestclassTestNG -->
+      </class> <!-- AA_KiteTestClass.NewTestKite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

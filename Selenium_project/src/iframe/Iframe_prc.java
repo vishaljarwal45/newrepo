@@ -2,6 +2,7 @@ package iframe;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -10,7 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Iframe_prc {
 
@@ -51,11 +54,10 @@ public class Iframe_prc {
 		
 		
 		
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		
-		
-		
-		
-		
+		 
+		 
 		
 		
 		

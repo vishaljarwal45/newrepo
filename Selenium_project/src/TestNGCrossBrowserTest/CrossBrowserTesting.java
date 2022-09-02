@@ -1,11 +1,11 @@
 package TestNGCrossBrowserTest;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;  
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -18,7 +18,7 @@ public class CrossBrowserTesting {
 
   @Test
 
-  public void test(String BrowserName) {
+  public void test( String BrowserName) {
 		WebDriver driver = null;
 		
 		if(BrowserName.equals("chrome")){
@@ -43,7 +43,7 @@ public class CrossBrowserTesting {
   
  {
 	  
-	  System.setProperty("webdriver.edge.driver", "C:\\selenium files\\lib\\msedgedriver.exe");
+	  System.setProperty("webdriver.edge.driver","C:\\selenium files\\lib\\msedgedriver.exe");
 	  
 	  driver=new EdgeDriver();
   }

@@ -1,4 +1,4 @@
-package testNGkite;
+package AA_testNGkitePOM;
 
 import java.io.File;
 import java.io.IOException;
