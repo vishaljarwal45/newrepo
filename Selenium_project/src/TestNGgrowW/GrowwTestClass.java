@@ -13,8 +13,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(AA_Listener.Listener.class)
 public class GrowwTestClass {
 	
 	WebDriver driver;
@@ -30,7 +31,7 @@ public class GrowwTestClass {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://groww.in/");
-		 driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		 driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 
 		MyFile=new File("D:\\velocity\\excelfile.xlsx");
 		MySheet=WorkbookFactory.create(MyFile).getSheet("Groww");
@@ -61,7 +62,8 @@ public class GrowwTestClass {
 	 login.ClickToLogin();
 	 Reporter.log("password entered ",true);
 
-	 driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
+	 driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+	 
 	 
 	 
 	 login.pinpage(MySheet.getRow(0).getCell(2).getStringCellValue());

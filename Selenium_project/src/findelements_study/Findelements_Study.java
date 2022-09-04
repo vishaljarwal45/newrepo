@@ -12,7 +12,7 @@ public class Findelements_Study {
 	public static void main(String[] args) {
 
 
-		
+		 
 		System.setProperty("webdriver.chrome.driver", "C:\\selenium files\\lib\\chromedriver.exe");
 		
 		

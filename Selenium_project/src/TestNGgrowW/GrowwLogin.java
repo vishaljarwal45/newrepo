@@ -22,7 +22,7 @@ public class GrowwLogin {
 	
 	@FindBy(xpath="//span[text()='Submit']") private WebElement Continubutton;
 
-	@FindBy(xpath = "//div[@class='tfaep471PinInput']") private WebElement PinPage;
+	@FindBy(xpath = "/html/body/div[1]/div/div[1]/div[1]/div[1]/div[2]/div/div/div") private WebElement PinPage;
 	
 	public  GrowwLogin(WebDriver driver) {
 		

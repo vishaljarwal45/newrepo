@@ -38,6 +38,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\selenium files\\lib\\chromedr
 		
 		act.sendKeys(Keys.ENTER).perform();
 		
+		
 	}
  
 }

@@ -1,6 +1,7 @@
 package dynamic_elements;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,37 +21,46 @@ public class Dynamic_elements {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
 		
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://www.techlistic.com/p/demo-selenium-practice.html");
 		
 		driver.manage().window().maximize();
-//		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
-		
-		driver.findElement(By.name("q")).sendKeys("macbook air");
-		
-		driver.findElement(By.className("L0Z3Pu")).click();
-		
+		int rows = driver.findElements(By.xpath("//table[@id='customers']//tbody/tr/th")).size();
 
-		
-		WebElement review = driver.findElement(By.xpath("((//div[@class='_2kHMtA'])[2]//span)[8]"));
-		
-		System.out.println(review.getText());
-		WebDriverWait w=new WebDriverWait(driver,Duration.ofMillis(2000));
-		w.until(ExpectedConditions.visibilityOf(review));
-		
-				
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(rows);
+		int column=driver.findElements(By.xpath("//table[@id='customers']//tbody/tr")).size();
+    System.out.println(column);
+    
+//    String data1 = driver.findElement(By.xpath("//table[@id='customers']//tbody/tr[2]/td[1]")).getText();
+//    
+//    System.out.println(data1);
+    
+    
+    for(int r=1;r>=0;r++) {
+    	for(int c=1;c>=0;c++) {
+    		
+    		String data1 = driver.findElement(By.xpath("//table[@id='customers']//tbody/tr["+r+"]/td["+c+"]")).getText();
+    	    
+    	    System.out.println(data1);
+    	}
+    	
+    	System.out.println();
+    	
+    	
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	}
 
 }

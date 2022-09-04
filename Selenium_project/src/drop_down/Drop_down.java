@@ -19,7 +19,7 @@ public class Drop_down {
 		Thread.sleep(200);
 
 	    
-		driver.findElement(By.xpath("//a[contains(@id,'u_0_2_')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Create New Account')]")).click();
 		Thread.sleep(2000);
 		
 		driver.findElement(By.name("firstname")).sendKeys("vishal");

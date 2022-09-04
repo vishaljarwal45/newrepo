@@ -1,5 +1,7 @@
 package drop_down;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,14 +24,32 @@ public class Multi_drop {
 		Select s=new Select(animals);
 		System.out.println(s.isMultiple());
 		
-		s.selectByIndex(1);
-		s.selectByValue("bonda");
-		s.selectByVisibleText("Burger");
+//		s.selectByIndex(1);
+//		s.selectByValue("bonda");
+//		s.selectByVisibleText("Burger");
+//		
+//		
+//		Thread.sleep(300);
+//	//	s.deselectAll();
+//		s.deselectByVisibleText("Burger");
+//		
+		
+		List<WebElement> alloptions = s.getOptions();
+		System.out.println(alloptions.size());
 		
 		
-		Thread.sleep(300);
-	//	s.deselectAll();
-		s.deselectByVisibleText("Burger");
+		for(WebElement l:alloptions) {
+			System.out.println(l.getText());
+			if(l.getText().equals("Burger")) {
+				l.click();
+				break;
+			}
+		}
+		
+		
+		
+		
+		
 		
 	}
 

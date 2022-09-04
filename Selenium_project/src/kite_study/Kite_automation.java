@@ -29,6 +29,7 @@ public class Kite_automation {
 		driver.get("https://kite.zerodha.com/#loggedout");
 		
 		
+		
 		Thread.sleep(1000);
 		WebElement login = driver.findElement(By.id("userid"));
 		
